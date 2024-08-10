@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Tanha";
+	src: url("./assets/fonts/tanha.eot"), url("./assets/fonts/tanha.ttf"),
+		url("./assets/fonts/tanha.woff"), url("./assets/fonts/tanha.woff2");
+}
+
+body {
+	font-family: "Tanha";
+}
+
+::selection {
+	background-color: hsl(var(--twc-primary) / 0.5);
+	color: #333;
+}
