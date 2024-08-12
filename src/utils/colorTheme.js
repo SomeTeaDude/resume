@@ -38,3 +38,15 @@ export function makeLight() {
 	localStorage.setItem("theme", "light");
 	document.documentElement.setAttribute("data-theme", "light");
 }
+
+export function changeThemeColor(color) {
+	const themeColors = ["gold", "love"];
+
+	if (!themeColors.includes(color)) {
+		localStorage.setItem("themeColor", "gold");
+		document.body.setAttribute("data-theme", "gold");
+	} else {
+		localStorage.setItem("themeColor", color);
+		document.body.setAttribute("data-theme", color);
+	}
+}

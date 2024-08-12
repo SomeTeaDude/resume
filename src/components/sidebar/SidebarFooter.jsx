@@ -10,7 +10,7 @@ import {
 
 const SidebarFooter = () => {
 	return (
-		<div className="absolute bottom-0 start-0 flex justify-center items-center gap-4 w-full py-3 shadow-3xl dark:shadow-gray-900">
+		<div className="flex justify-center items-center gap-4 w-full py-3 bg-main-2 shadow-3xl transition-all duration-1000">
 			<SidebarFooterLink>
 				<FaTwitter />
 			</SidebarFooterLink>

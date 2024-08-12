@@ -1,10 +1,12 @@
 import Profile from "./Profile";
 import SidebarFooter from "./SidebarFooter";
+import SidebarContent from "./content/SidebarContent";
 
 const Sidebar = () => {
 	return (
-		<div className="absolute end-0 top-0 bg-white dark:bg-slate-800 h-full w-72 shadow-2xl dark:shadow-gray-900">
+		<div className="flex flex-col justify-between absolute end-0 top-0 bg-main-3 h-full w-72 shadow-4xl transition-all duration-1000">
 			<Profile />
+			<SidebarContent />
 			<SidebarFooter />
 		</div>
 	);
