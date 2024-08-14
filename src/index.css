@@ -17,14 +17,23 @@
 	}
 }
 
-@font-face {
+/* @font-face {
 	font-family: "Vazir";
 	src: url("./assets/fonts/Vazir.eot"), url("./assets/fonts/Vazir.ttf"),
 		url("./assets/fonts/Vazir.woff"), url("./assets/fonts/Vazir.woff2");
+} */
+@font-face {
+	font-family: "DastNevis";
+	src: url("./assets/fonts/Vazir.eot"), url("./assets/fonts/DastNevis.ttf"),
+	url("./assets/fonts/Vazir.woff"), url("./assets/fonts/Vazir.woff2");
+}
+@font-face {
+	font-family: "TimeZone";
+	src: url("./assets/fonts/TimeZone.ttf");
 }
 
 body {
-	font-family: "Vazir";
+	font-family: "DastNevis", "TimeZone";
 }
 
 p {

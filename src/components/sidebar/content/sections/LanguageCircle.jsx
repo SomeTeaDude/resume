@@ -15,7 +15,7 @@ const LanguageCircle = ({ title = "زبان", percentage = 0 }) => {
 		<div className="flex flex-col justify-start items-center gap-1 [&_path]:!transition-all [&_path]:!duration-1000">
 			<CircularProgressbar
 				value={mainPercentage}
-				text={`${mainPercentage}%`}
+				text={`${percentage}%`}
 				styles={buildStyles({
 					textSize: "20px",
 

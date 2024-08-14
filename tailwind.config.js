@@ -10,6 +10,9 @@ export default {
 				"3xl": "0 1px 4px 0 rgba(15,15,20,.1)",
 				"4xl": "0 3px 8px 0 rgba(15,15,20,.2)",
 			},
+			transitionDuration: {
+				750: "750ms",
+			},
 			colors: {
 				golden: "#ffc107",
 				lovely: "#f46258",
