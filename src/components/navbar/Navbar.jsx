@@ -6,48 +6,48 @@ import NavbarLogoSection from "./NavbarLogoSection";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-	const showNavbar = useSelector((state) => state.navbar.showNavbar);
-	
-	const [timedShowNavbar, setTimedShowNavbar] = useState(false);
+  const showNavbar = useSelector((state) => state.navbar.showNavbar);
 
-	useEffect(() => {
-		let timeout;
+  const [timedShowNavbar, setTimedShowNavbar] = useState(false);
 
-		if (showNavbar) {
-			setTimedShowNavbar(showNavbar)
-		} else {
-			timeout = setTimeout(() => {
-				setTimedShowNavbar(showNavbar)
-			}, 500)
-		}
+  useEffect(() => {
+    let timeout;
 
-		return () => {
-			clearTimeout(timeout)
-		}
-	}, [showNavbar])
+    if (showNavbar) {
+      setTimedShowNavbar(showNavbar);
+    } else {
+      timeout = setTimeout(() => {
+        setTimedShowNavbar(showNavbar);
+      }, 500);
+    }
 
-	return (
-		<div
-			className={`transition-all ${
-				timedShowNavbar ? "me-44" : "me-0"
-			} duration-1000`}
-		>
-			<div
-				className={`flex flex-col justify-between absolute start-0 top-0 bg-main-3 dark:bg-main-1 h-full w-52 shadow-4xl ${
-					timedShowNavbar ? "translate-x-0" : "translate-x-28"
-				} transition-all ease-in-out duration-750 z-30`}
-			>
-				<div>
-					<NavbarTogglerSection />
-					<NavbarMenuSection />
-					<NavbarLogoSection />
-				</div>
-				<div>
-					<ManageTheme />
-				</div>
-			</div>
-		</div>
-	);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [showNavbar]);
+
+  return (
+    <div
+      className={`transition-all ${
+        timedShowNavbar ? "me-44" : "me-0"
+      } duration-750`}
+    >
+      <div
+        className={`flex flex-col justify-between absolute start-0 top-0 bg-main-3 dark:bg-main-1 h-full w-52 shadow-4xl ${
+          timedShowNavbar ? "translate-x-0" : "translate-x-28"
+        } transition-all ease-in-out duration-750 z-30`}
+      >
+        <div>
+          <NavbarTogglerSection />
+          <NavbarMenuSection />
+          <NavbarLogoSection />
+        </div>
+        <div>
+          <ManageTheme />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

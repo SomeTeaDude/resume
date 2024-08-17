@@ -1,46 +1,71 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import NavbarLink from "./NavbarLink";
 import { FaHome } from "react-icons/fa";
 
 const NavbarMenuSection = () => {
-	const showNavbar = useSelector((state) => state.navbar.showNavbar);
-	
-	const [timedShowNavbar, setTimedShowNavbar] = useState(false);
+  const showNavbar = useSelector((state) => state.navbar.showNavbar);
 
-	useEffect(() => {
-		let timeout;
+  const [timedShowNavbar, setTimedShowNavbar] = useState(false);
 
-		if (showNavbar) {
-			setTimedShowNavbar(showNavbar)
-		} else {
-			timeout = setTimeout(() => {
-				setTimedShowNavbar(showNavbar)
-			}, 500)
-		}
+  useEffect(() => {
+    let timeout;
 
-		return () => {
-			clearTimeout(timeout)
-		}
-	}, [showNavbar])
+    if (showNavbar) {
+      setTimedShowNavbar(showNavbar);
+    } else {
+      timeout = setTimeout(() => {
+        setTimedShowNavbar(showNavbar);
+      }, 500);
+    }
 
-	const links = ["خانه", "نمونه کار ها", "تاریخچه", "وبلاگ ها", "تماس"];
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [showNavbar]);
 
-	return (
-		<div className="flex flex-col justify-start items-end">
-			<div
-				className={`w-full px-6 pb-4 pt-12 border-b border-secondary/30  ${
-					timedShowNavbar ? "opacity-100" : "opacity-0"
-				} transition-all duration-500`}
-			>
-				{links.map((link, index) => (
-					<NavbarLink key={index} num={index}>
-						{link}
-					</NavbarLink>
-				))}
-			</div>
-		</div>
-	);
+  const links = [
+    {
+      show: "برو بالا",
+      href: "hero",
+    },
+    {
+      show: "خدمات",
+      href: "services",
+    },
+    {
+      show: "نمونه کار ها",
+      href: "portfolios",
+    },
+    {
+      show: "نظرات",
+      href: "recommendations",
+    },
+    {
+      show: "تاریخچه",
+      href: "history",
+    },
+    {
+      show: "تماس",
+      href: "contact",
+    },
+  ];
+
+  return (
+    <div className="flex flex-col justify-start items-end">
+      <div
+        className={`w-full px-6 pb-4 pt-12 border-b border-secondary/30  ${
+          timedShowNavbar ? "opacity-100" : "opacity-0"
+        } transition-all duration-500`}
+      >
+        {links.map((link, index) => (
+          <NavbarLink key={index} href={link.href} num={index}>
+            {link.show}
+          </NavbarLink>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default NavbarMenuSection;
