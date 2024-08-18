@@ -6,6 +6,9 @@ export default {
   darkMode: ["selector", '[data-theme="dark"]'],
   theme: {
     extend: {
+      screens: {
+        xs: "580px",
+      },
       keyframes: {
         "ball-ping": {
           "0%": {

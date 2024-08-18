@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleNavbar } from "../../features/navbar/navbarSlice";
 import { useEffect, useState } from "react";
+import { scrollTo } from "../../utils/scroll";
 
 const NavbarLink = ({ children, href = "", num }) => {
   const [timedShowNavbar, setTimedShowNavbar] = useState(false);
@@ -28,6 +29,9 @@ const NavbarLink = ({ children, href = "", num }) => {
 
   const toggleTheNavbar = () => {
     dispatch(toggleNavbar());
+    setTimeout(() => {
+      scrollTo(href);
+    }, 1200);
   };
 
   return (
@@ -36,13 +40,12 @@ const NavbarLink = ({ children, href = "", num }) => {
         timedShowNavbar ? "translate-x-0" : "translate-x-full"
       } transition-all duration-750`}
     >
-      <a
-        href={`#${href}`}
+      <button
         onClick={toggleTheNavbar}
         className="block py-[6px] font-semibold text-secondary hover:text-slate-800 dark:hover:text-slate-300 transition-all duration-200"
       >
         {children}
-      </a>
+      </button>
     </div>
   );
 };

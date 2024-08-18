@@ -1,8 +1,9 @@
 import { LuChevronLeft } from "react-icons/lu";
 
-const Link = ({ children }) => {
+const Link = ({ children, onClick }) => {
   return (
     <a
+      onClick={onClick}
       href="#"
       className="inline-flex justify-start items-center gap-1 hover:gap-2 text-primary hover:text-primary/80 text-sm transition-all duration-200"
     >

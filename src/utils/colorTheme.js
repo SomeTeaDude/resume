@@ -28,21 +28,21 @@ export function setTheme() {
   const themeColors = ["gold", "love"];
 
   if (!localStorage.getItem("theme") || !localStorage.getItem("themeColor")) {
-    document.documentElement.setAttribute("data-theme", "light");
+    document.documentElement.setAttribute("data-theme", "dark");
     document.body.setAttribute("data-theme", "gold");
-    localStorage.setItem("theme", "light");
+    localStorage.setItem("theme", "dark");
     localStorage.setItem("themeColor", "gold");
-    changeHeroBg("light");
+    changeHeroBg("dark");
   } else {
     if (
       !themes.includes(localStorage.getItem("theme")) ||
       !themeColors.includes(localStorage.getItem("themeColor"))
     ) {
-      document.documentElement.setAttribute("data-theme", "light");
+      document.documentElement.setAttribute("data-theme", "dark");
       document.body.setAttribute("data-theme", "gold");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "dark");
       localStorage.setItem("themeColor", "gold");
-      changeHeroBg("light");
+      changeHeroBg("dark");
     } else {
       document.documentElement.setAttribute(
         "data-theme",

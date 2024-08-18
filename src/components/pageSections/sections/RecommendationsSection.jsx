@@ -54,7 +54,12 @@ const RecommendationsSection = () => {
           }}
           modules={[Pagination]}
           spaceBetween={50}
-          slidesPerView={2}
+          slidesPerView={1}
+          breakpoints={{
+            1280: {
+              slidesPerView: 2,
+            },
+          }}
           className="overflow-visible"
           onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}
         >

@@ -4,7 +4,7 @@ const RecommendationCard = ({ person }) => {
   const { name, img, message, stars } = person;
 
   return (
-    <div className="relative p-6 bg-matte shadow-4xl transition-all duration-750">
+    <div className="relative p-6 bg-matte shadow-4xl cursor-grab active:cursor-grabbing transition-all duration-750">
       <div className="flex justify-start items-start">
         <div>
           <h1 className="text-slate-800 dark:text-slate-200 font-bold transition-all duration-750">

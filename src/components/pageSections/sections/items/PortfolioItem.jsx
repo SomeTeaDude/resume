@@ -3,7 +3,7 @@ import Link from "../../../ui/Link";
 const PortfolioItem = ({ portfolio }) => {
   return (
     <div
-      className="portfolio-grid-item w-1/3 h-auto relative px-4 mb-7 overflow-hidden"
+      className="portfolio-grid-item w-full sm:w-1/2 xl:w-1/3 h-auto relative px-4 mb-7 overflow-hidden"
       data-category={portfolio.category}
     >
       <div className="group relative overflow-hidden w-full pb-[90%] rounded-md">

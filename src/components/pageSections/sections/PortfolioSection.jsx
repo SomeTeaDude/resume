@@ -128,7 +128,7 @@ const PortfolioSection = () => {
           </button>
         ))}
       </div>
-      <div className="portfolio-grid grid grid-cols-3 gap-6">
+      <div className="portfolio-grid">
         {portfolios.map((portfolio) => (
           <PortfolioItem key={portfolio.id} portfolio={portfolio} />
         ))}

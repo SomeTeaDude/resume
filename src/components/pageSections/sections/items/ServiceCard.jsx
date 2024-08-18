@@ -1,6 +1,7 @@
 import { FaChevronLeft } from "react-icons/fa";
 import { LuChevronLeft } from "react-icons/lu";
 import Link from "../../../ui/Link";
+import { scrollTo } from "../../../../utils/scroll";
 
 const ServiceCard = ({ children, title }) => {
   return (
@@ -10,7 +11,7 @@ const ServiceCard = ({ children, title }) => {
       </h1>
       <p className="text-sm text-secondary my-3">{children}</p>
       <div>
-        <Link>استخدام کن</Link>
+        <Link onClick={() => scrollTo("contact")}>استخدام کن</Link>
       </div>
     </div>
   );

@@ -13,17 +13,17 @@ const SliderNavigation = ({ currentIndex }) => {
             currentIndex > 0
               ? "text-secondary"
               : "text-secondary/20 pointer-events-none"
-          } text-sm`}
+          } text-sm transition-all duration-500`}
         >
           <FaChevronRight />
         </button>
         <button
           onClick={() => swiper.slideNext()}
           className={`${
-            currentIndex < swiper.slides.length - 2
+            currentIndex < swiper.pagination.bullets.length - 1
               ? "text-secondary"
               : "text-secondary/20 pointer-events-none"
-          } text-sm`}
+          } text-sm transition-all duration-500`}
         >
           <FaChevronLeft />
         </button>

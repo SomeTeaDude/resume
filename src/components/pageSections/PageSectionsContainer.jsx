@@ -1,4 +1,4 @@
-import HistorySection from "../sidebar/content/sections/HistorySection";
+import HistorySection from "./sections/HistorySection";
 import PageSection from "./PageSection";
 import BrandsSection from "./sections/BrandsSection";
 import ContactInformationSection from "./sections/ContactInformationSection";

@@ -9,9 +9,9 @@ const HistoryCard = () => {
         <div className="flex justify-between items-start">
           <div>
             <h1 className="text-slate-800 dark:text-slate-200 font-bold transition-all duration-750">
-              خوبی؟
+              عنوان رویداد
             </h1>
-            <p className="italic text-sm text-secondary">نویسنده پیام</p>
+            <p className="italic text-sm text-secondary">موقعیت</p>
           </div>
           <div className="inline-flex justify-start items-center gap-1 px-3 py-1 bg-main-3 shadow-inner-capsol shadow-main-2 rounded-full transition-all duration-750">
             <p className="text-xs text-secondary">تیر 1403 - مرداد 1403</p>

@@ -23,7 +23,7 @@ const ContactInformationSection = () => {
   return (
     <div>
       <SectionTitle>اطلاعات تماس</SectionTitle>
-      <div className="flex justify-between items-center gap-4 h-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 h-full">
         {contactInformations.map((contactInformation, index) => (
           <ContactInformationCard
             key={index}

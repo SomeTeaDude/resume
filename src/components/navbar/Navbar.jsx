@@ -33,9 +33,11 @@ const Navbar = () => {
       } duration-750`}
     >
       <div
-        className={`flex flex-col justify-between absolute start-0 top-0 bg-main-3 dark:bg-main-1 h-full w-52 shadow-4xl ${
-          timedShowNavbar ? "translate-x-0" : "translate-x-28"
-        } transition-all ease-in-out duration-750 z-30`}
+        className={`flex flex-col justify-between absolute start-0 top-0 bg-main-3 dark:bg-main-1 h-screen lg:h-full w-full md:w-52 shadow-4xl ${
+          timedShowNavbar
+            ? "translate-x-0"
+            : "translate-x-full lg:translate-x-28"
+        } transition-all ease-in-out duration-750 z-50`}
       >
         <div>
           <NavbarTogglerSection />

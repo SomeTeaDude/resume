@@ -17,7 +17,7 @@ const ServicesSection = () => {
   return (
     <div>
       <SectionTitle>خدمات قابل ارائه</SectionTitle>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <ServiceCard key={index} title={service.title}>
             {service.content}

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import NavbarLink from "./NavbarLink";
-import { FaHome } from "react-icons/fa";
 
 const NavbarMenuSection = () => {
   const showNavbar = useSelector((state) => state.navbar.showNavbar);
@@ -25,10 +24,6 @@ const NavbarMenuSection = () => {
   }, [showNavbar]);
 
   const links = [
-    {
-      show: "برو بالا",
-      href: "hero",
-    },
     {
       show: "خدمات",
       href: "services",

@@ -1,9 +1,9 @@
 const BrandsSection = () => {
   return (
-    <div className="flex justify-between items-center px-16">
+    <div className="grid grid-cols-4 px-2 xl:px-16 gap-4 sm:gap-28">
       <a
         href="#"
-        className="block opacity-60 hover:opacity-100 w-36 h-36 transition-all duration-500"
+        className="block opacity-60 hover:opacity-100 w-auto h-auto transition-all duration-500"
       >
         <img
           src="/img/brands/brand-1.png"
@@ -13,7 +13,7 @@ const BrandsSection = () => {
       </a>
       <a
         href="#"
-        className="block opacity-60 hover:opacity-100 w-36 h-36 transition-all duration-500"
+        className="block opacity-60 hover:opacity-100 w-auto h-auto transition-all duration-500"
       >
         <img
           src="/img/brands/brand-2.png"
@@ -23,7 +23,7 @@ const BrandsSection = () => {
       </a>
       <a
         href="#"
-        className="block opacity-60 hover:opacity-100 w-36 h-36 transition-all duration-500"
+        className="block opacity-60 hover:opacity-100 w-auto h-auto transition-all duration-500"
       >
         <img
           src="/img/brands/brand-3.png"
@@ -33,7 +33,7 @@ const BrandsSection = () => {
       </a>
       <a
         href="#"
-        className="block opacity-60 hover:opacity-100 w-36 h-36 transition-all duration-500"
+        className="block opacity-60 hover:opacity-100 w-auto h-auto transition-all duration-500"
       >
         <img
           src="/img/brands/brand-2.png"
