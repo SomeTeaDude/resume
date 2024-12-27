@@ -1,6 +1,7 @@
 # resume
 
 Everyone needs a resume, and so do i😁
+(BTW it's not finished yet)
 
 # React + Vite
 
