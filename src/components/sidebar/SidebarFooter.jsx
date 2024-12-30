@@ -14,7 +14,7 @@ const SidebarFooter = () => {
       <SidebarFooterLink>
         <FaTwitter />
       </SidebarFooterLink>
-      <SidebarFooterLink>
+      <SidebarFooterLink href="https://github.com/TahaEasy">
         <FaGithub />
       </SidebarFooterLink>
       <SidebarFooterLink>

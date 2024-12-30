@@ -1,7 +1,7 @@
 import Isotope from "isotope-layout";
 
 let iso;
-export let currentFilter = "all";
+export let currentFilter = "webTemplates";
 
 export function isotopize() {
   const elem = document.querySelector(".portfolio-grid");
@@ -36,7 +36,7 @@ const filterFns = {
   },
 };
 
-export function arrange(filter = "all") {
+export function arrange(filter = "webTemplates") {
   currentFilter = filter;
   const filterValue = filterFns[currentFilter];
   iso.arrange({ filter: filterValue });

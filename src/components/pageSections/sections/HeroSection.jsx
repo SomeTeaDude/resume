@@ -17,7 +17,7 @@ const HeroSection = () => {
           <div className="flex flex-col xs:flex-row justify-center xl:justify-start items-center my-8">
             <span>
               <span className="text-light-hero">{"< "}</span>
-              <span className="text-primary">رخ</span>
+              <span className="text-primary">کد</span>
               <span className="text-light-hero">{" > "}</span>
             </span>
             <span className="text-light-hero mx-2">
@@ -41,7 +41,7 @@ const HeroSection = () => {
             </span>
             <span>
               <span className="text-light-hero">{" </ "}</span>
-              <span className="text-primary">رخ</span>
+              <span className="text-primary">کد</span>
               <span className="text-light-hero">{" >"}</span>
             </span>
           </div>

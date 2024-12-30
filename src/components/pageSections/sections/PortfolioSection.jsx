@@ -10,10 +10,6 @@ import PortfolioItem from "./items/PortfolioItem";
 
 const filters = [
   {
-    value: "all",
-    show: "همه",
-  },
-  {
     value: "webTemplates",
     show: "قالب ها",
   },
@@ -28,6 +24,10 @@ const filters = [
   {
     value: "logos",
     show: "لوگو ها",
+  },
+  {
+    value: "all",
+    show: "همه",
   },
 ];
 
