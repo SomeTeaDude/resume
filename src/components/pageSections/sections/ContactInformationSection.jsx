@@ -9,7 +9,7 @@ const contactInformations = [
   ],
   [
     { title: "ایمیل", value: "shamlytaha2@gmail.com" },
-    { title: "تلگرام", value: "T_Shameli" },
+    { title: "تلگرام", value: "TahaEasy" },
     { title: "ایتا", value: "taha891" },
   ],
   [
