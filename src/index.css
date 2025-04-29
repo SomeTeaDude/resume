@@ -132,3 +132,20 @@ p {
   border-radius: 2px;
   background-color: hsl(var(--twc-primary));
 }
+
+.contact-form {
+  transform-origin: bottom;
+  animation: slide-up-form both;
+  animation-timeline: view();
+}
+
+@keyframes slide-up-form {
+  0% {
+    transform: rotateX(-45deg);
+    opacity: 0.25;
+  }
+  100% {
+    transform: rotateX(-0deg);
+    opacity: 1;
+  }
+}

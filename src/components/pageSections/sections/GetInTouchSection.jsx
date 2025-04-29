@@ -8,7 +8,7 @@ const GetInTouchSection = () => {
   return (
     <div className="mb-8">
       <SectionTitle>در ارتباط باشید</SectionTitle>
-      <div className="bg-matte shadow-4xl p-7 transition-all duration-750">
+      <div className="bg-matte shadow-4xl p-7 transition-all duration-750 contact-form">
         <div className="w-full my-6">
           <Input placeholder="نام" icon={<FiUser />} />
         </div>

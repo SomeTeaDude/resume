@@ -4,8 +4,8 @@ import SectionTitle from "./items/SectionTitle";
 const contactInformations = [
   [
     { title: "تلفن همراه", value: "09119595220" },
-    { title: "تلفن همراه", value: "09113582072" },
-    { title: "تلفن ثابت", value: "34730244" },
+    { title: "تلفن همراه", value: "09119595220" },
+    { title: "تلفن ثابت", value: "09119595220" },
   ],
   [
     { title: "ایمیل", value: "shamlytaha2@gmail.com" },
