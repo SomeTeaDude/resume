@@ -75,7 +75,7 @@ p {
 }
 
 [data-theme="light"] {
-  --myColor1: rgba(244, 244, 246, 0.88);
+  --myColor1: rgba(244, 244, 246, 0.5);
   --myColor2: rgba(244, 244, 246, 1);
 }
 

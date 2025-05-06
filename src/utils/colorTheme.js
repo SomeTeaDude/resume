@@ -2,21 +2,21 @@ function changeHeroBg(mode) {
   if (mode === "light") {
     document
       .querySelector(".fader")
-      .style.setProperty("--myColor1", "rgba(244, 244, 246, 0.88)");
+      .style.setProperty("--myColor1", "rgba(244, 244, 246, 0.5)");
     document
       .querySelector(".fader")
       .style.setProperty("--myColor2", "rgba(244, 244, 246, 1)");
   } else if (mode === "dark") {
     document
       .querySelector(".fader")
-      .style.setProperty("--myColor1", "rgba(30, 30, 40, 0.88)");
+      .style.setProperty("--myColor1", "rgba(30, 30, 40, 0.65)");
     document
       .querySelector(".fader")
       .style.setProperty("--myColor2", "rgba(30, 30, 40, 1)");
   } else {
     document
       .querySelector(".fader")
-      .style.setProperty("--myColor1", "rgba(244, 244, 246, 0.88)");
+      .style.setProperty("--myColor1", "rgba(244, 244, 246, 0.5)");
     document
       .querySelector(".fader")
       .style.setProperty("--myColor2", "rgba(244, 244, 246, 1)");
