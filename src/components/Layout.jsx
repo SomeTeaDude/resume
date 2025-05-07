@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div className="flex justify-center items-center py-0 xl:py-4 w-full h-auto xl:h-screen min-h-0 xl:min-h-screen bg-main transition-all duration-750">
+    <div className="flex justify-center items-center py-0 xl:py-4 w-full h-auto xl:h-dvh min-h-0 xl:min-h-dvh bg-main transition-all duration-750">
       <div className="contain-layout xl:container relative h-auto lg:h-full w-full shadow-4xl bg-main-3 overflow-hidden transition-all duration-750">
         <Sidebar />
         <MobileBar />
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
         ></div>
         <div
           id="scroll-container"
-          className={`relative me-0 lg:me-72 ms-0 lg:ms-24 h-screen xl:h-full outline-none overflow-y-auto overflow-x-hidden no-scrollbar smooth-scroll ${
+          className={`relative me-0 lg:me-72 ms-0 lg:ms-24 h-dvh xl:h-full outline-none overflow-y-auto overflow-x-hidden no-scrollbar smooth-scroll ${
             timedShowNavbar ? "-translate-x-28" : "translate-x-0"
           } transition-all ease-in-out duration-750`}
         >

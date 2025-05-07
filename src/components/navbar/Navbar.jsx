@@ -33,7 +33,7 @@ const Navbar = () => {
       } duration-750`}
     >
       <div
-        className={`flex flex-col justify-between absolute start-0 top-0 bg-main-3 dark:bg-main-1 h-screen lg:h-full w-full md:w-52 shadow-4xl ${
+        className={`flex flex-col justify-between absolute start-0 top-0 bg-main-3 dark:bg-main-1 h-dvh lg:h-full w-full md:w-52 shadow-4xl ${
           timedShowNavbar
             ? "translate-x-0"
             : "translate-x-full lg:translate-x-28"

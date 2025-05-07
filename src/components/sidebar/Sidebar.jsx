@@ -11,7 +11,7 @@ const Sidebar = () => {
     <div
       className={`flex flex-col justify-between absolute end-0 top-0 ${
         !showSidebar || showNavbar ? "-translate-x-full" : "translate-x-0"
-      } lg:translate-x-0 bg-main-3 h-screen lg:h-full w-72 shadow-4xl transition-all duration-750 z-40`}
+      } lg:translate-x-0 bg-main-3 h-dvh lg:h-full w-72 shadow-4xl transition-all duration-750 z-40`}
     >
       <Profile />
       <SidebarContent />
