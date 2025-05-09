@@ -2,7 +2,7 @@ import { createThemes } from "tw-colors";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.jsx"],
+  content: ["./index.html", "./src/**/*.jsx", "./src/**/*.js"],
   darkMode: ["selector", '[data-theme="dark"]'],
   theme: {
     extend: {
@@ -35,6 +35,7 @@ export default {
         "light-hero": "#fdfdfe",
         golden: "#ffc107",
         lovely: "#f46258",
+        icey: "#03a9f4",
       },
       fontFamily: {
         vazir: "Vazir",
@@ -77,6 +78,12 @@ export default {
       },
       love: {
         primary: "#f46258",
+      },
+      nature: {
+        primary: "#8bc34a",
+      },
+      ice: {
+        primary: "#03a9f4",
       },
     }),
   ],

@@ -1,3 +1,5 @@
+import { themeColors } from "./colors";
+
 function changeHeroBg(mode) {
   if (mode === "light") {
     document
@@ -36,8 +38,6 @@ export function makeLight() {
 }
 
 export function changeThemeColor(color) {
-  const themeColors = ["gold", "love"];
-
   if (!themeColors.includes(color)) {
     localStorage.setItem("themeColor", "gold");
     document.body.setAttribute("data-theme", "gold");
