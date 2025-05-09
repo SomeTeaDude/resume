@@ -1,9 +1,11 @@
 import Link from "../../../ui/Link";
 import { scrollTo } from "../../../../utils/scroll";
 
-const ServiceCard = ({ children, title }) => {
+const ServiceCard = ({ children, title, animationDirection }) => {
   return (
-    <div className="p-6 bg-main-1 dark:bg-matte shadow-4xl transition-all duration-750">
+    <div
+      className={`come-from-${animationDirection} p-6 bg-main-1 dark:bg-matte shadow-4xl transition-all duration-750`}
+    >
       <h1 className="text-slate-800 dark:text-slate-200 font-bold font-dast-nevis transition-all duration-750">
         {title}
       </h1>

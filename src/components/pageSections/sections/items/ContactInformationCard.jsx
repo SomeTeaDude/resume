@@ -1,8 +1,10 @@
 import AdressLine from "../../../sidebar/content/sections/AdressLine";
 
-const ContactInformationCard = ({ informations }) => {
+const ContactInformationCard = ({ informations, animationDirection }) => {
   return (
-    <div className="flex flex-col justify-center gap-2 h-full w-full bg-matte shadow-4xl px-6 py-8 transition-all duration-750">
+    <div
+      className={`come-from-${animationDirection} flex flex-col justify-center gap-2 h-full w-full bg-matte shadow-4xl px-6 py-8 transition-all duration-750`}
+    >
       {informations.map((information, index) => (
         <AdressLine
           key={index}

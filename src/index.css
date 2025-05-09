@@ -143,6 +143,27 @@ textarea {
   animation-timeline: view();
 }
 
+.come-from-left {
+  transform-origin: center;
+  animation: come-from-left both;
+  animation-timeline: view();
+}
+.come-from-right {
+  transform-origin: center;
+  animation: come-from-right both;
+  animation-timeline: view();
+}
+.come-from-top {
+  transform-origin: center;
+  animation: come-from-top both;
+  animation-timeline: view();
+}
+.come-from-bottom {
+  transform-origin: center;
+  animation: come-from-bottom both;
+  animation-timeline: view();
+}
+
 @keyframes slide-up-form {
   0% {
     transform: rotateX(-45deg);
@@ -150,6 +171,47 @@ textarea {
   }
   100% {
     transform: rotateX(-0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes come-from-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0.25;
+  }
+  25% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes come-from-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.25;
+  }
+  25% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes come-from-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.25;
+  }
+  25% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes come-from-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0.25;
+  }
+  25% {
+    transform: translateY(0%);
     opacity: 1;
   }
 }

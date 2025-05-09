@@ -5,12 +5,12 @@ const content =
   "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.";
 
 const services = [
-  { title: "توسعه وب سایت", content },
-  { title: "طراحی UI/UX", content },
-  { title: "طراحی صدا", content },
-  { title: "طراحی بازی", content },
-  { title: "تبلیغات", content },
-  { title: "برنامه Android/IOS", content },
+  { title: "توسعه وب سایت", content, animationDirection: "right" },
+  { title: "طراحی UI/UX", content, animationDirection: "bottom" },
+  { title: "طراحی صدا", content, animationDirection: "left" },
+  { title: "طراحی بازی", content, animationDirection: "right" },
+  { title: "تبلیغات", content, animationDirection: "bottom" },
+  { title: "برنامه Android/IOS", content, animationDirection: "left" },
 ];
 
 const ServicesSection = () => {
@@ -19,7 +19,11 @@ const ServicesSection = () => {
       <SectionTitle>خدمات قابل ارائه</SectionTitle>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
         {services.map((service, index) => (
-          <ServiceCard key={index} title={service.title}>
+          <ServiceCard
+            key={index}
+            title={service.title}
+            animationDirection={service.animationDirection}
+          >
             {service.content}
           </ServiceCard>
         ))}

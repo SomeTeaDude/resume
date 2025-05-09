@@ -8,17 +8,17 @@ const HistorySection = () => {
       <div>
         <SectionTitle>تاریخچه</SectionTitle>
         <HistoryColumn>
-          <HistoryCard />
-          <HistoryCard />
-          <HistoryCard />
+          <HistoryCard animationDirection="right" />
+          <HistoryCard animationDirection="right" />
+          <HistoryCard animationDirection="right" />
         </HistoryColumn>
       </div>
       <div>
         <SectionTitle>تحصیلات</SectionTitle>
         <HistoryColumn>
-          <HistoryCard />
-          <HistoryCard />
-          <HistoryCard />
+          <HistoryCard animationDirection="left" />
+          <HistoryCard animationDirection="left" />
+          <HistoryCard animationDirection="left" />
         </HistoryColumn>
       </div>
     </div>
