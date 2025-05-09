@@ -1,4 +1,31 @@
-import { themeColors } from "./colors";
+export const colors = [
+  {
+    name: "gold",
+    value: "golden",
+    mngThmClass: "bg-golden gold:bg-golden/70",
+    tickClass: "gold:opacity-100",
+  },
+  {
+    name: "love",
+    value: "lovely",
+    mngThmClass: "bg-lovely love:bg-lovely/70",
+    tickClass: "love:opacity-100",
+  },
+  {
+    name: "nature",
+    value: "natury",
+    mngThmClass: "bg-natury nature:bg-natury/70",
+    tickClass: "nature:opacity-100",
+  },
+  {
+    name: "ice",
+    value: "icey",
+    mngThmClass: "bg-icey ice:bg-icey/70",
+    tickClass: "ice:opacity-100",
+  },
+];
+
+export const themeColors = ["love", "gold", "nature", "ice"];
 
 function changeHeroBg(mode) {
   if (mode === "light") {
@@ -59,7 +86,6 @@ function setThemeByDevice() {
 
 export function setTheme() {
   const themes = ["light", "dark"];
-  const themeColors = ["gold", "love"];
 
   if (
     !localStorage.getItem("theme") ||

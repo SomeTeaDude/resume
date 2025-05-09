@@ -35,6 +35,7 @@ export default {
         "light-hero": "#fdfdfe",
         golden: "#ffc107",
         lovely: "#f46258",
+        natury: "#8bc34a",
         icey: "#03a9f4",
       },
       fontFamily: {
