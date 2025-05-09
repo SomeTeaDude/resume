@@ -23,40 +23,6 @@ function changeHeroBg(mode) {
   }
 }
 
-export function setTheme() {
-  const themes = ["light", "dark"];
-  const themeColors = ["gold", "love"];
-
-  if (!localStorage.getItem("theme") || !localStorage.getItem("themeColor")) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    document.body.setAttribute("data-theme", "gold");
-    localStorage.setItem("theme", "dark");
-    localStorage.setItem("themeColor", "gold");
-    changeHeroBg("dark");
-  } else {
-    if (
-      !themes.includes(localStorage.getItem("theme")) ||
-      !themeColors.includes(localStorage.getItem("themeColor"))
-    ) {
-      document.documentElement.setAttribute("data-theme", "dark");
-      document.body.setAttribute("data-theme", "gold");
-      localStorage.setItem("theme", "dark");
-      localStorage.setItem("themeColor", "gold");
-      changeHeroBg("dark");
-    } else {
-      document.documentElement.setAttribute(
-        "data-theme",
-        localStorage.getItem("theme")
-      );
-      document.body.setAttribute(
-        "data-theme",
-        localStorage.getItem("themeColor")
-      );
-      changeHeroBg(localStorage.getItem("theme"));
-    }
-  }
-}
-
 export function makeDark() {
   localStorage.setItem("theme", "dark");
   document.documentElement.setAttribute("data-theme", "dark");
@@ -78,5 +44,39 @@ export function changeThemeColor(color) {
   } else {
     localStorage.setItem("themeColor", color);
     document.body.setAttribute("data-theme", color);
+  }
+}
+
+function setThemeByDevice() {
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    makeDark();
+    changeThemeColor("gold");
+  } else {
+    makeLight();
+    changeThemeColor("love");
+  }
+}
+
+export function setTheme() {
+  const themes = ["light", "dark"];
+  const themeColors = ["gold", "love"];
+
+  if (
+    !localStorage.getItem("theme") ||
+    !localStorage.getItem("themeColor") ||
+    !themes.includes(localStorage.getItem("theme")) ||
+    !themeColors.includes(localStorage.getItem("themeColor"))
+  ) {
+    setThemeByDevice();
+  } else {
+    document.documentElement.setAttribute(
+      "data-theme",
+      localStorage.getItem("theme")
+    );
+    document.body.setAttribute(
+      "data-theme",
+      localStorage.getItem("themeColor")
+    );
+    changeHeroBg(localStorage.getItem("theme"));
   }
 }

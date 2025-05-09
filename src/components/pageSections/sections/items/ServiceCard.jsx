@@ -1,5 +1,3 @@
-import { FaChevronLeft } from "react-icons/fa";
-import { LuChevronLeft } from "react-icons/lu";
 import Link from "../../../ui/Link";
 import { scrollTo } from "../../../../utils/scroll";
 
