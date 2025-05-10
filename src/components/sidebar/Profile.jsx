@@ -13,7 +13,7 @@ const Profile = () => {
           <Logo w="96" h="96" />
         </div>
       </div>
-      <p className="mt-2 font-bold font-dast-nevis text-slate-800 dark:text-slate-200 text-center">
+      <p className="dark:text-glow mt-2 font-bold font-dast-nevis text-slate-800 dark:text-slate-200 text-center">
         طاها ایزی
       </p>
       <p className="mt-2 text-sm text-secondary text-center">

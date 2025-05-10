@@ -135,6 +135,7 @@ textarea {
   width: 16px;
   border-radius: 2px;
   background-color: hsl(var(--twc-primary));
+  @apply shadow-glow;
 }
 
 .contact-form {
@@ -232,4 +233,8 @@ textarea {
     animation: come-from-bottom both;
     animation-timeline: view();
   }
+}
+
+[data-theme="dark"] .dark\:text-glow {
+  text-shadow: 0px 0px 10px hsl(var(--twc-primary));
 }

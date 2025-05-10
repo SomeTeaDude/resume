@@ -27,6 +27,10 @@ export default {
         inner: "inset 1px 1px 10px 2px hsl(var(--twc-main-2))",
         "inner-capsol": "inset 0 3px 8px 0 hsl(var(--twc-main-2))",
         "inner-input": "inset 0 1px 4px 0 hsl(var(--twc-main-2))",
+        glow: "0px 0px 10px hsl(var(--twc-primary))",
+      },
+      dropShadow: {
+        glow: "0px 0px 4px hsl(var(--twc-primary))",
       },
       transitionDuration: {
         750: "750ms",
