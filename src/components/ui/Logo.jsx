@@ -3,9 +3,9 @@ const Logo = ({ w, h }) => {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width={`${w ? w : "122.000000pt"}`}
+      width={`${w ? w : "135.000000pt"}`}
       height={`${h ? h : "150.000000pt"}`}
-      viewBox="0 0 122.000000 150.000000"
+      viewBox="-5 0 140.000000 125.000000"
       preserveAspectRatio="xMidYMid meet"
       className="fill-primary dark:[&_path]:drop-shadow-glow transition-all duration-750 [&_path]:transition-all [&_path]:duration-750"
     >
