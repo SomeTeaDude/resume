@@ -5,12 +5,36 @@ const content =
   "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.";
 
 const services = [
-  { title: "توسعه وب سایت", content, animationDirection: "right" },
-  { title: "طراحی UI/UX", content, animationDirection: "bottom" },
-  { title: "طراحی صدا", content, animationDirection: "left" },
-  { title: "طراحی بازی", content, animationDirection: "right" },
-  { title: "تبلیغات", content, animationDirection: "bottom" },
-  { title: "برنامه Android/IOS", content, animationDirection: "left" },
+  {
+    title: "توسعه وب سایت",
+    content,
+    animationDirection: "right xl:come-from-right",
+  },
+  {
+    title: "طراحی UI/UX",
+    content,
+    animationDirection: "left xl:come-from-bottom",
+  },
+  {
+    title: "طراحی صدا",
+    content,
+    animationDirection: "right xl:come-from-left",
+  },
+  {
+    title: "طراحی بازی",
+    content,
+    animationDirection: "left xl:come-from-right",
+  },
+  {
+    title: "تبلیغات",
+    content,
+    animationDirection: "right xl:come-from-bottom",
+  },
+  {
+    title: "برنامه Android/IOS",
+    content,
+    animationDirection: "left xl:come-from-left",
+  },
 ];
 
 const ServicesSection = () => {

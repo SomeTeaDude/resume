@@ -35,8 +35,8 @@ export default {
         "light-hero": "#fdfdfe",
         golden: "#ffc107",
         lovely: "#f46258",
-        natury: "#8bc34a",
-        icey: "#03a9f4",
+        natury: "#00a693",
+        icey: "#0067a5",
       },
       fontFamily: {
         vazir: "Vazir",
@@ -81,10 +81,10 @@ export default {
         primary: "#f46258",
       },
       nature: {
-        primary: "#8bc34a",
+        primary: "#00a693",
       },
       ice: {
-        primary: "#03a9f4",
+        primary: "#0067a5",
       },
     }),
   ],

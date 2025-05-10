@@ -14,7 +14,7 @@ const Profile = () => {
         </div>
       </div>
       <p className="mt-2 font-bold font-dast-nevis text-slate-800 dark:text-slate-200 text-center">
-        طاها شاملی
+        طاها ایزی
       </p>
       <p className="mt-2 text-sm text-secondary text-center">
         فرانت و بک اند کار

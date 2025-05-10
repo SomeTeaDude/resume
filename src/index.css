@@ -153,14 +153,14 @@ textarea {
   animation: come-from-right both;
   animation-timeline: view();
 }
-.come-from-top {
-  transform-origin: center;
-  animation: come-from-top both;
-  animation-timeline: view();
-}
 .come-from-bottom {
   transform-origin: center;
   animation: come-from-bottom both;
+  animation-timeline: view();
+}
+.come-from-top {
+  transform-origin: center;
+  animation: come-from-top both;
   animation-timeline: view();
 }
 
@@ -195,6 +195,16 @@ textarea {
     opacity: 1;
   }
 }
+@keyframes come-from-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0.25;
+  }
+  25% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 @keyframes come-from-top {
   0% {
     transform: translateY(-100%);
@@ -205,13 +215,21 @@ textarea {
     opacity: 1;
   }
 }
-@keyframes come-from-bottom {
-  0% {
-    transform: translateY(100%);
-    opacity: 0.25;
+
+@media (width >= 1280px) {
+  .xl\:come-from-left {
+    transform-origin: center;
+    animation: come-from-left both;
+    animation-timeline: view();
   }
-  25% {
-    transform: translateY(0%);
-    opacity: 1;
+  .xl\:come-from-right {
+    transform-origin: center;
+    animation: come-from-right both;
+    animation-timeline: view();
+  }
+  .xl\:come-from-bottom {
+    transform-origin: center;
+    animation: come-from-bottom both;
+    animation-timeline: view();
   }
 }
