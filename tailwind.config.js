@@ -31,6 +31,7 @@ export default {
       },
       dropShadow: {
         glow: "0px 0px 4px hsl(var(--twc-primary))",
+        shine: "0px 0px 6px hsl(var(--twc-primary))",
       },
       transitionDuration: {
         750: "750ms",

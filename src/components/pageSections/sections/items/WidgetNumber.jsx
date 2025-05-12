@@ -16,7 +16,7 @@ const WidgetNumber = ({ children, num, withPlus = false }) => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex justify-start items-center gap-2 transition-all duration-750">
-        <h3 className="text-primary text-2xl transition-all duration-750">{`${
+        <h3 className="dark:text-glow text-primary text-2xl transition-all duration-750">{`${
           withPlus ? "+ " : ""
         } ${countingNum}`}</h3>
         <p className="text-slate-800 dark:text-slate-200 font-semibold">

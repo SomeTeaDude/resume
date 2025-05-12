@@ -26,6 +26,10 @@ const Layout = ({ children }) => {
       }, 500);
     }
 
+    document.querySelectorAll(".glowing-circlar-progressbar").forEach((e) => {
+      e.setAttribute("viewBox", "-10 -10 120 120");
+    });
+
     return () => {
       clearTimeout(timeout);
     };
@@ -42,7 +46,7 @@ const Layout = ({ children }) => {
         <MobileBar />
         <div
           onClick={toggleTheNavbar}
-          className={`fixed top-0 right-0 w-full h-full bg-black/40 ${
+          className={`fixed top-0 right-0 w-full h-full backdrop-blur-[3px] bg-black/40 ${
             timedShowNavbar ? "opacity-100 visible" : "opacity-0 invisible"
           } transition-all duration-750 z-20`}
         ></div>
