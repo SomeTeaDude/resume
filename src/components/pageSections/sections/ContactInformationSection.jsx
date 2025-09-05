@@ -13,9 +13,9 @@ const contactInformations = [
   [
     "bottom",
     [
-      { title: "ایمیل", value: "shamlytaha2@gmail.com" },
-      { title: "تلگرام", value: "TahaEasy" },
-      { title: "ایتا", value: "taha891" },
+      { title: "ایمیل", value: "someteadude@gmail.com" },
+      { title: "تلگرام", value: "SomeTeaDude" },
+      { title: "ایتا", value: "SomeTeaDude" },
     ],
   ],
   [

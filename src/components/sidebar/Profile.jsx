@@ -14,13 +14,13 @@ const Profile = () => {
         </div>
       </div>
       <p className="dark:text-glow mt-2 font-bold font-dast-nevis text-slate-800 dark:text-slate-200 text-center">
-        طاها ایزی
+        داش چایی خور
       </p>
       <p className="mt-2 text-sm text-secondary text-center">
         فرانت و بک اند کار
       </p>
       <p className="mt-1 text-sm text-secondary text-center">
-        دانش آموز پایه یازدهم
+        پایه دوازدهم ریاضی
       </p>
     </div>
   );
